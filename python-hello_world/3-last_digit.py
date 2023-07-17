@@ -13,6 +13,5 @@ elif number > 0:
     if remainder > 5:
         print("Last digit of {:d} is {:d} and is greater than 5"
               .format(number, remainder), end="\n")
-    elif remainder == 0:
-        print("Last digit of {:d} is {:d} and is 0"
+    print("Last digit of {:d} is {} and is 0"
               .format(number, remainder), end="\n")
