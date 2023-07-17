@@ -17,5 +17,6 @@ elif number > 0:
         print("Last digit of {:d} is {} and is 0"
               .format(number, remainder), end="\n")
 else:
+    # this happens incase the number is zero
     print("Last digit of {:d} is {:d} and is 0"
           .format(number, 0), end="\n")
