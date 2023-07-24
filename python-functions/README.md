@@ -10,7 +10,10 @@
 
 
 ### 0. a + b
-<p> </p>
+#### <p>Write a function that computes a to the power of b and return the value.</p>
+- Prototype: def pow(a, b):
+- Returns the value of a ^ b
+- You are not allowed to import any module
 
 
 ### 0. a + b
