@@ -6,4 +6,6 @@ def multiple_returns(sentence):
         its first character.
     """
     # get the sentence's length using len() method
+    if len(sentence) == 0:
+        return None
     return (len(sentence), sentence[0])
