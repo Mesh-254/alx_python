@@ -4,5 +4,5 @@ def square_matrix_simple(matrix=[]):
         of all integers of a matrix 
         args:integers of a matrix. 
     """
-    new_matrix = map(lambda x: x*x, matrix)
+    new_matrix = list(map(lambda x: list(map(lambda y: y**2, x)), matrix))
     return new_matrix
