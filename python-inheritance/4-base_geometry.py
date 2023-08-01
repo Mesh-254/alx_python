@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""BaseGeometry module"""
+"""
+empty class
+"""
 
 
 class BaseGeometry:
-    """class BaseGeometry"""
+    """Empty class"""
 
     def area(self):
         """Public instance method"""
