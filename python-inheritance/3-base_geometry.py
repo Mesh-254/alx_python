@@ -1,7 +1,7 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """  Geometry module"""
 
 
-class BaseGeometry():
+class BaseGeometry:
     """Empty class BaseGeometry"""
     pass
