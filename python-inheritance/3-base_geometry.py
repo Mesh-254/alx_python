@@ -2,6 +2,6 @@
 """  Geometry module"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """Empty class BaseGeometry"""
     pass
