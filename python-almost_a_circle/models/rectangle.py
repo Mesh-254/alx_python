@@ -52,11 +52,13 @@ class Rectangle(Base):
         return self.__y
 
     # setting new values for x and updating it in object
+    @x.setter
     def x(self, value):
         """setter method to change the value 'x' using an object"""
         self.__x = value
 
     # setting new values for y and updating it in object
+    @y.setter
     def x(self, value):
         """setter method to change the value 'y' using an object"""
         self.__y = value
