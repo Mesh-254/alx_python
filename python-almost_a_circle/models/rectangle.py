@@ -17,48 +17,48 @@ class Rectangle(Base):
 
     # getter method to get the properties of width
     @property
-    def get_width(self):
+    def width(self):
         """getter method to get the properties of width"""
         return self.__width
 
     # setting new values for width and updating it in object
-    @get_width.setter
-    def set_width(self, width):
+    @width.setter
+    def width(self, width):
         """setter method to change the value 'width' using an object"""
         self.__width = width
 
     # getter method to get the properties of height
     @property
-    def get_height(self):
+    def height(self):
         """getter method to get the properties of height"""
         return self.__height
 
     # setting new values for height and updating it in object
-    @get_height.setter
-    def set_height(self, height):
+    @ height.setter
+    def height(self, height):
         """setter method to change the value 'height' using an object"""
         self.__height = height
 
     # getter method to get the properties of x
     @property
-    def get_x(self):
+    def x(self):
         """getter method to get the properties of x"""
         return self.__x
 
     # setting new values for x and updating it in object
-    @get_x.setter
-    def set_x(self, x):
+    @x.setter
+    def x(self, x):
         """setter method to change the value 'x' using an object"""
         self.__x = x
 
-     # getter method to get the properties of y
+    # getter method to get the properties of y
     @property
-    def get_y(self):
+    def y(self):
         """getter method to get the properties of y"""
         return self.__y
 
     # setting new values for y and updating it in object
-    @get_y.setter
-    def set_x(self, y):
+    @y.setter
+    def x(self, y):
         """setter method to change the value 'y' using an object"""
         self.__y = y
