@@ -41,24 +41,22 @@ class Rectangle(Base):
 
     # getter method to get the properties of x
     @property
-    def get_x(self):
+    def x(self):
         """getter method to get the properties of x"""
         return self.__x
 
     # setting new values for x and updating it in object
-    @get_x.setter
     def x(self, value):
         """setter method to change the value 'x' using an object"""
         self.__x = value
 
     # getter method to get the properties of y
     @property
-    def get_y(self):
+    def y(self):
         """getter method to get the properties of y"""
         return self.__y
 
     # setting new values for y and updating it in object
-    @get_y.setter
     def x(self, value):
         """setter method to change the value 'y' using an object"""
         self.__y = value
