@@ -94,3 +94,9 @@ class Rectangle(Base):
             for w in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self) -> str:
+        """Function returns string representation"""
+        return ("[Rectangle] ({:0d}) {:0d}/{:0d} - {:0d}/{:0d}"
+                .format(self.id, self.__x, self.__y,
+                        self.__width, self.__height))
