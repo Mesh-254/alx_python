@@ -88,16 +88,24 @@ class Rectangle(Base):
         result_area = (self.__width * self.__height)
         return result_area
 
+    # def display(self):
+    #     """prints in stdout the Rectangle instance with the character #"""
+    #     for h in range(self.__y):
+    #         for w in range(self.__x):
+    #             print("", end="")
+    #         print()
+    #     for h in range(self.__height):
+    #         for w in range(self.__width):
+    #             print("  ".join("#"), end="")
+    #         print()
+
     def display(self):
-        """prints in stdout the Rectangle instance with the character #"""
-        for h in range(self.__y):
-            for w in range(self.__x):
-                print("", end="")
-            print()
-        for h in range(self.__height):
-            for w in range(self.__width):
-                print("#", end="")
-            print()
+        """
+           Display The Rectangle Using  '#'
+        """
+        print(("\n" * self.__y) + "\n".
+              join(((" " * self.__x) + ("#" * self.__width))
+                   for i in range(self.__height)))
 
     def __str__(self) -> str:
         """Function returns string representation"""
