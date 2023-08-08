@@ -90,6 +90,10 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout the Rectangle instance with the character #"""
+        for h in range(self.__y):
+            for w in range(self.__x):
+                print("", end="")
+            print()
         for h in range(self.__height):
             for w in range(self.__width):
                 print("#", end="")
