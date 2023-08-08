@@ -23,14 +23,14 @@ class Rectangle(Base):
 
     # setting new values for width and updating it in object
     @width.setter
-    def width(self, width):
+    def width(self, value):
         """setter method to change the value 'width' using an object"""
         # validating if width is > than 0 and if it is int type
-        if not isinstance(width, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        elif width <= 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
-        self.__width = width
+        self.__width = value
 
     # getter method to get the properties of height
     @property
@@ -40,14 +40,14 @@ class Rectangle(Base):
 
     # setting new values for height and updating it in object
     @height.setter
-    def height(self, height):
+    def height(self, value):
         """setter method to change the value 'height' using an object"""
         # validating if height is > than 0 and if it is int type
-        if not isinstance(height, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif height <= 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
-        self.__height = height
+        self.__height = value
 
     # getter method to get the properties of x
     @property
@@ -60,9 +60,9 @@ class Rectangle(Base):
     def x(self, value):
         """setter method to change the value 'x' using an object"""
         # validating if x is >= 0 and if it is int type
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("x must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -79,7 +79,6 @@ class Rectangle(Base):
         # validating if y is >= 0 and if it is int type
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
-        else:
-            self.__y = value
+        self.__y = value
