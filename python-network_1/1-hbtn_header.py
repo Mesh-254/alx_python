@@ -7,8 +7,5 @@ url = sys.argv[1]
 
 response = requests.get(url)
 
-
-request_header_id = response.headers['X-Request-Id']
-
-
-print(request_header_id)
+# request_header_id = response.headers['X-Request-Id']
+print(response.headers['X-Request-Id'])
