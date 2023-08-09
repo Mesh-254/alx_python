@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""  response header module """
+"""response header module"""
 import requests
 import sys
 
