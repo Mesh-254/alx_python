@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Response header value (X-Request-Id)"""
+"""Response header value"""
 import requests
 import sys
 
