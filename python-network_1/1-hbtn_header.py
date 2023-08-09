@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Response header value"""
+"""  response header module """
 import requests
 import sys
 
