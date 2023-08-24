@@ -1,18 +1,12 @@
 #!/usr/bin/python3
-"""post module"""
-
-import sys
-import requests
+"""
+same as 2-post_email with requests models
+"""
 
 if __name__ == '__main__':
-    """ script that takes in a URL and
-        an email address, sends a POST request
-        to the passed URL with the email as
-        a parameter
-    """
-    url = sys.argv[1]
-    email = {"email": sys.argv[2]}
+    import requests
+    import sys
 
-    response = requests.post(url, data=email)
-
-    print("Your email is: {:}".format(response.text))
+    para = {"email": sys.argv[2]}
+    r = requests.post(sys.argv[1], data=para)
+    print(r.text)
