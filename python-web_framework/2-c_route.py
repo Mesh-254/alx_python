@@ -19,8 +19,9 @@ def show_hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def show_text(text):
+def c_text(text):
     """function that return home route"""
+    text = text.replace('_', ' ')
     return f'C {text}'
 
 
