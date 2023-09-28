@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-for n in range(0, 100):
-    if list(str(n)) in list(str(n)):
-        continue
-    else:
-        print(n, end=" ")
+for i in range(10):
+    for j in range(i+1, 9):
+        print(f"{i}{j}", end=", ")
+print(89, end=" ")
