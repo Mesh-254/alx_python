@@ -29,16 +29,15 @@ todo_data = todos_response.json()
 # Initialize lists and counters
 titles = []
 completed = 0
-notCompleted = 0
+totalTasks = 0
 
 # Iterate through the todo items and count completed and not completed tasks
 for x in todo_data:
-    if not x["completed"]:
-        notCompleted += 1
-    else:
+    if (x["completed"] == True):
         completed += 1
         titles.append(x['title'])
-        totalTasks = completed + notCompleted
+    if (x['completed'] == False or x['completed'] == True):
+        totalTasks += 1
 
 # Display the employee's task information
 print('Employee {} is done with tasks({}/{}):'
