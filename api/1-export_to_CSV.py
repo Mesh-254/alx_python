@@ -40,8 +40,8 @@ for x in todo_data:
     # Format the row as a tuple
     row = (user_id, username, taskStatus, title)
     csv_rows.append(row)
-
-with open(f'{user_id}.csv', 'w', encoding='utf-8', newline='') as f:
+cvs_file = f'{user_id}.csv'
+with open(cvs_file, 'w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f)
 
     # Write the data rows
