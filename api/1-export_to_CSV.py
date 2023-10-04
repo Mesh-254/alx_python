@@ -13,7 +13,7 @@ import json
 import requests
 
 # Get the user_id from the command line arguments
-user_id = argv[1]
+user_id = str(argv[1])
 
 # Define the endpoint URL to access specific todo items for the user
 url_todos = f'https://jsonplaceholder.typicode.com/users/{user_id}/todos'
