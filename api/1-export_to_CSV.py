@@ -45,11 +45,11 @@ for x in todo_data:
     # Append the formatted row to csv_rows
     csv_rows.append(row)
 
-
-
+# Define the CSV file name
+csv_file = f'{str(user_id)}.csv'
 
 # Write the contents to the CSV file
-with open(str(user_id) + ".csv", 'w', encoding='utf-8', newline='') as f:
+with open(csv_file, 'w', encoding='utf-8', newline='') as f:
     # Write the data rows
     for row in csv_rows:
         f.write(row + '\n')
