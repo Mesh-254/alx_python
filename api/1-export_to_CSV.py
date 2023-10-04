@@ -13,7 +13,7 @@ import json
 import requests
 
 # Get the user_id from the command line arguments
-user_id = int(argv[1])
+user_id = argv[1]
 
 # Define the endpoint URL to access specific todo items for the user
 url_todos = f'https://jsonplaceholder.typicode.com/users/{user_id}/todos'
@@ -45,11 +45,11 @@ for x in todo_data:
     # Append the formatted row to csv_rows
     csv_rows.append(row)
 
-# Define the CSV file name
-csv_file = f'{user_id}.csv'
+
+
 
 # Write the contents to the CSV file
-with open(csv_file, 'w', encoding='utf-8', newline='') as f:
+with open(str(user_id) + ".csv", 'w', encoding='utf-8', newline='') as f:
     # Write the data rows
     for row in csv_rows:
         f.write(row + '\n')
