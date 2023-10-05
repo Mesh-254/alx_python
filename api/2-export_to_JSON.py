@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-"""
-Module: Export Employee Tasks to JSON
+""" Export Employee Tasks to JSON
 
-Retrieve user data from the API for the given user_id.
+This Python script exports tasks owned by a specific employee in JSON format.
+It retrieves task data for the specified user from a
+remote API and saves it to a JSON file.
 
-Args:
-    user_id (int): The ID of the user to retrieve data for.
-
-Returns:
-    dict: A dictionary containing user data.
+Usage:
+    $ python script.py <user_id>
 """
 # Import the necessary libraries
 from sys import argv
