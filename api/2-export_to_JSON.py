@@ -45,10 +45,9 @@ user_data = {}
 
 # Iterate through the todo items and count completed and not completed tasks
 for x in todo_data:
-    if (x['completed'] == True or x['completed'] == False):
-        tasks = {"task": x['title'],
-                 'completed': x['completed'], 'username': username}
-        data.append(tasks)
+    tasks = {"task": x['title'],
+                'completed': x['completed'], 'username': username}
+    data.append(tasks)
 
 user_data[user_id] = data
 
