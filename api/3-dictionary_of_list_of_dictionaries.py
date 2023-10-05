@@ -21,7 +21,6 @@ user_tasks = {}
 # Iterate through the user details
 for user in user_details:
     user_id = user['id']
-    print(user_id)
     username = user['username']
 
     # Define the endpoint URL to access specific todo items for the user
@@ -44,11 +43,10 @@ for user in user_details:
         tasks.append(task_info)
 
 # Add the tasks list to the user_tasks dictionary with the user_id as the key
-    user_tasks[f'{user_id}'] = tasks
+        user_tasks[f'{user_id}'] = tasks
 
     # Serializing JSON
-    json_object = json.dumps(user_tasks)
+json_object = json.dumps(user_tasks)
 
-    with open('todo_all_employees.json', 'w',
-              encoding='utf-8', newline='') as f:
-        f.write(json_object)
+with open('todo_all_employees.json', 'w', encoding='utf-8', newline='') as f:
+    f.write(json_object)
