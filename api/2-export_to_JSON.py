@@ -1,8 +1,14 @@
 #!/usr/bin/python3
-""" Module:Python script to export data in the
-JSON format Records all tasks that are
-owned by this employee"""
+"""
+Module: Export Employee Tasks to JSON
 
+This Python script exports tasks owned by a specific employee in JSON format.
+It retrieves task data for the specified user
+from a remote API and saves it to a JSON file.
+
+Usage:
+$ python script.py <user_id>
+"""
 # Import the necessary libraries
 from sys import argv
 import json
