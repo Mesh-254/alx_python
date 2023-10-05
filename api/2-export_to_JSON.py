@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""Python script to export data in the JSON format
- Records all tasks that are owned by this employee"""
+"""Python script to export data in the JSON format Records all tasks that are owned by this employee"""
 
 # Import the necessary libraries
 from sys import argv
 import json
 import requests
-
 
 # Get the user_id from the command line arguments
 user_id = argv[1]
@@ -26,7 +24,7 @@ username = res['username']
 todos_response = requests.get(url_todos)
 todo_data = todos_response.json()
 
-# Initialize lists and dict
+# Initialize lists and dictionary
 data = []
 user_data = {}
 
@@ -39,12 +37,12 @@ for x in todo_data:
 
 user_data[user_id] = data
 
-# Serializing json
+# Serializing JSON
 json_object = json.dumps(user_data)
 
-# created json file using user id
+# Create a JSON file using the user id
 json_file = f'{user_id}.json'
 
-# Writing to json file
+# Writing to a JSON file
 with open(json_file, 'w', encoding='utf-8', newline='') as f:
-    f.write((json_object))
+    f.write(json_object)
