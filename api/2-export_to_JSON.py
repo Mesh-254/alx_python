@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
  Python script to export data in the JSON format
+ Records all tasks that are owned by this employee
  """
 
 # Import the necessary libraries
