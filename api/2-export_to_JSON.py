@@ -1,6 +1,3 @@
-"""Python script to export data in the
-JSON format Records all tasks that are
-owned by this employee"""
 #!/usr/bin/python3
 """Python script to export data in the
 JSON format Records all tasks that are
@@ -50,6 +47,4 @@ json_file = f'{user_id}.json'
 
 # Writing to a JSON file
 with open(json_file, 'w', encoding='utf-8', newline='') as f:
-    """Creates a JSON file named after the user
-    ID and writes the JSON object to that file"""
     f.write(json_object)
